@@ -13,6 +13,7 @@ namespace ConsoleApp1
         public Group[] Groups;
 
 
+
       
     }
 

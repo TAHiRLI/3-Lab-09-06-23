@@ -14,7 +14,6 @@ namespace ConsoleApp1
 
 
             Group P235 = new Group();
-            P235.students = new Student[0];
 
 
 
@@ -30,12 +29,27 @@ namespace ConsoleApp1
             P235.AddStuden(tahir);
 
 
-            foreach (var stud in P235.students)
+            
+
+
+        }
+
+        static void Search(Group group)
+        {
+            bool? isWaranted = null;
+            int? nameLength = null;
+            int? age = null;
+
+            // get data from console
+
+            age = 123;
+
+         var students = group.Filter(isWaranted, age, nameLength);
+
+            foreach (var stud in students)
             {
-                Console.WriteLine(stud.Fullname);
+                Console.WriteLine($"Name = {stud.Fullname} ;  Age = {stud.age}");
             }
-
-
         }
     }
 }

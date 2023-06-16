@@ -10,5 +10,8 @@ namespace ConsoleApp1
     {
         public string Fullname;
         public double Grade;
+        public string Phone;
+        public bool isWaranted;
+        public int age;
     }
 }
